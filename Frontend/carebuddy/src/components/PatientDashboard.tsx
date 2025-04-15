@@ -1,9 +1,21 @@
-// src/components/PatientDashboard.tsx
-export default function PatientDashboard() {
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const PatientDashboard = () => {
+  const showToast = () => toast("Hello, this is a toast message!");
+
   return (
-    <div className="p-8 bg-white shadow rounded">
-      <h2 className="text-2xl font-semibold mb-4">Patient Dashboard</h2>
-      <p>Welcome, patient! Here's your health info...</p>
+    <div>
+      <button onClick={showToast}>Show Toast</button>
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar
+        closeOnClick
+      />
     </div>
   );
-}
+};
+
+export default PatientDashboard;
