@@ -52,8 +52,8 @@
 
 | Folder          | Description                                         |
 |-----------------|-----------------------------------------------------|
-| `frontend/`     | React application (deployed on Vercel)              |
-| `backend/`      | Django application (deployed on Render/Railway)     |
+| `frontend/`     | React application               |
+| `backend/`      | Django application     |
 
 ## 🤝 Contributions
 
