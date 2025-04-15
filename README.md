@@ -49,10 +49,12 @@
 ---
 
 ## 📁 Folder Structure
-carebuddy/ ├── frontend/ # React application (deployed on Vercel) │ ├── public/ │ ├── src/ │ └── package.json │ ├── backend/ # Django application (deployed on Render/Railway) │ ├── carebuddy/ │ ├── api/ │ ├── manage.py │ └── requirements.txt │ ├── README.md └── .gitignore
+
+| Folder          | Description                                         |
+|-----------------|-----------------------------------------------------|
+| `frontend/`     | React application (deployed on Vercel)              |
+| `backend/`      | Django application (deployed on Render/Railway)     |
 
 ## 🤝 Contributions
 
 Contributions are welcome! Feel free to fork the repo and submit a pull request.
-
-
