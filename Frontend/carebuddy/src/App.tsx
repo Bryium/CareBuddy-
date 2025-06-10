@@ -1,14 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PatientDashboard from "./components/PatientDashboard";
+import React from "react";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<PatientDashboard />} /> {/* default route */}
-      </Routes>
-    </Router>
+    <div>
+      <Header />
+    </div>
   );
-}
+};
 
 export default App;
