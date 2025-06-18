@@ -38,13 +38,19 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
     'corsheaders',
     'api',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'accounts',
+    'users',
+    'appointments',
+
 
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -55,6 +61,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "carebuddy_backend.urls"
+CORS_ALLOW_ALL_ORIGINS = True
 
 TEMPLATES = [
     {
@@ -84,7 +91,7 @@ WSGI_APPLICATION = "carebuddy_backend.wsgi.application"
 
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 
@@ -145,7 +152,7 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # React frontend URL
+    'http://localhost:3000',
     'https://yourfrontenddomain.com',
 ]
 
