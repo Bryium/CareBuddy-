@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'accounts',
     'users',
+    'doctors',
     'appointments',
 
 
@@ -62,6 +63,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "carebuddy_backend.urls"
 CORS_ALLOW_ALL_ORIGINS = True
+AUTH_USER_MODEL = 'users.User'
+
 
 TEMPLATES = [
     {
