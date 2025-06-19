@@ -10,7 +10,7 @@ class DoctorListCreateView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated, IsAdminUser)
 
 
-class DoctorRetrieveupdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class DoctorRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
     permission_classes = (IsAuthenticated, IsAdminUser)
